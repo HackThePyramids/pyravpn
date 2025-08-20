@@ -1,0 +1,266 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 0%; /* hsl(0, 0%, 0%) */
+  --foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
+  --card: 0 0% 7%; /* hsl(0, 0%, 7%) */
+  --card-foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
+  --popover: 0 0% 7%; /* hsl(0, 0%, 7%) */
+  --popover-foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
+  --primary: 153 100% 50%; /* hsl(153, 100%, 50%) */
+  --primary-foreground: 0 0% 0%; /* hsl(0, 0%, 0%) */
+  --secondary: 0 0% 10%; /* hsl(0, 0%, 10%) */
+  --secondary-foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
+  --muted: 0 0% 20%; /* hsl(0, 0%, 20%) */
+  --muted-foreground: 0 0% 53%; /* hsl(0, 0%, 53%) */
+  --accent: 153 100% 50%; /* hsl(153, 100%, 50%) */
+  --accent-foreground: 0 0% 0%; /* hsl(0, 0%, 0%) */
+  --destructive: 350 100% 60%; /* hsl(350, 100%, 60%) */
+  --destructive-foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
+  --border: 0 0% 20%; /* hsl(0, 0%, 20%) */
+  --input: 0 0% 10%; /* hsl(0, 0%, 10%) */
+  --input-background: 0 0% 10%; /* hsl(0, 0%, 10%) */
+  --switch-background: 0 0% 20%; /* hsl(0, 0%, 20%) */
+  --ring: 153 100% 50%; /* hsl(153, 100%, 50%) */
+  --chart-1: 153 100% 50%; /* hsl(153, 100%, 50%) */
+  --chart-2: 153 100% 40%; /* hsl(153, 100%, 40%) */
+  --chart-3: 153 100% 30%; /* hsl(153, 100%, 30%) */
+  --chart-4: 153 100% 20%; /* hsl(153, 100%, 20%) */
+  --chart-5: 153 100% 10%; /* hsl(153, 100%, 10%) */
+  --radius: 0.625rem;
+  --sidebar: 0 0% 7%; /* hsl(0, 0%, 7%) */
+  --sidebar-foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
+  --sidebar-primary: 153 100% 50%; /* hsl(153, 100%, 50%) */
+  --sidebar-primary-foreground: 0 0% 0%; /* hsl(0, 0%, 0%) */
+  --sidebar-accent: 0 0% 10%; /* hsl(0, 0%, 10%) */
+  --sidebar-accent-foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
+  --sidebar-border: 0 0% 20%; /* hsl(0, 0%, 20%) */
+  --sidebar-ring: 153 100% 50%; /* hsl(153, 100%, 50%) */
+
+  --font-size: 14px;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+
+  /* Typography variables */
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5rem; /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  --text-4xl: 2.25rem; /* 36px */
+  --text-5xl: 3rem; /* 48px */
+  --text-6xl: 3.75rem; /* 60px */
+  --text-7xl: 4.5rem; /* 72px */
+  --text-8xl: 6rem; /* 96px */
+  --text-9xl: 8rem; /* 128px */
+}
+
+.dark {
+  --background: 0 0% 0%; /* hsl(0, 0%, 0%) */
+  --foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
+  --card: 0 0% 7%; /* hsl(0, 0%, 7%) */
+  --card-foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
+  --popover: 0 0% 7%; /* hsl(0, 0%, 7%) */
+  --popover-foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
+  --primary: 153 100% 50%; /* hsl(153, 100%, 50%) */
+  --primary-foreground: 0 0% 0%; /* hsl(0, 0%, 0%) */
+  --secondary: 0 0% 10%; /* hsl(0, 0%, 10%) */
+  --secondary-foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
+  --muted: 0 0% 20%; /* hsl(0, 0%, 20%) */
+  --muted-foreground: 0 0% 53%; /* hsl(0, 0%, 53%) */
+  --accent: 153 100% 50%; /* hsl(153, 100%, 50%) */
+  --accent-foreground: 0 0% 0%; /* hsl(0, 0%, 0%) */
+  --destructive: 350 100% 60%; /* hsl(350, 100%, 60%) */
+  --destructive-foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
+  --border: 0 0% 20%; /* hsl(0, 0%, 20%) */
+  --input: 0 0% 10%; /* hsl(0, 0%, 10%) */
+  --ring: 153 100% 50%; /* hsl(153, 100%, 50%) */
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --chart-1: 153 100% 50%; /* hsl(153, 100%, 50%) */
+  --chart-2: 153 100% 40%; /* hsl(153, 100%, 40%) */
+  --chart-3: 153 100% 30%; /* hsl(153, 100%, 30%) */
+  --chart-4: 153 100% 20%; /* hsl(153, 100%, 20%) */
+  --chart-5: 153 100% 10%; /* hsl(153, 100%, 10%) */
+  --sidebar: 0 0% 7%; /* hsl(0, 0%, 7%) */
+  --sidebar-foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
+  --sidebar-primary: 153 100% 50%; /* hsl(153, 100%, 50%) */
+  --sidebar-primary-foreground: 0 0% 0%; /* hsl(0, 0%, 0%) */
+  --sidebar-accent: 0 0% 10%; /* hsl(0, 0%, 10%) */
+  --sidebar-accent-foreground: 0 0% 100%; /* hsl(0, 0%, 100%) */
+  --sidebar-border: 0 0% 20%; /* hsl(0, 0%, 20%) */
+  --sidebar-ring: 153 100% 50%; /* hsl(153, 100%, 50%) */
+
+  /* Typography variables for dark mode (can be same or different) */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+  --text-8xl: 6rem;
+  --text-9xl: 8rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    cursor: none;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  .cursor-circle {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: #00ff88;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    transition: transform 0.1s ease;
+  }
+
+  .cursor-dot {
+    position: fixed;
+    width: 4px;
+    height: 4px;
+    background: #ffffff;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 10000;
+  }
+}
+
+/**
+ * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h4 {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+
+    label {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    button {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    input {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00ff88;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00cc66;
+}
+
+/* Gradient text effect */
+.gradient-text {
+  background: linear-gradient(135deg, #00ff88, #00cc66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Neon glow effect */
+.neon-glow {
+  box-shadow:
+    0 0 20px rgba(0, 255, 136, 0.157),   /* Core bright green glow */
+    0 0 200px rgba(0, 0, 0, 0.005);    /* Extremely large, very subtle black shadow to mask clipping */
+}
+
+/* New class for glow effect using pseudo-elements (this was from previous attempt, will modify or remove) */
+.glowing-card-container {
+  position: relative; /* Needed for absolute positioning of pseudo-element */
+  overflow: hidden;   /* Keep overflow hidden here if the card itself needs it */
+}
+
+.glowing-card-container::before {
+  content: '';
+  position: absolute;
+  top: -20%;    /* Adjust these to control glow position relative to card */
+  left: -20%;
+  right: -20%;
+  bottom: -20%; /* Extend beyond the card to allow full fade */
+  background: radial-gradient(circle at center, rgba(0, 255, 136, 0.2) 0%, transparent 70%); /* Green glow fading to transparent */
+  z-index: -1; /* Position behind the card content */
+  filter: blur(40px); /* Apply blur to the gradient for a softer glow */
+  border-radius: inherit; /* Inherit border-radius from parent container for smooth edges */
+  pointer-events: none; /* Ensure it doesn't interfere with clicks */
+  opacity: 0.7; /* Adjust overall glow intensity */
+}
+
+/* Grid pattern background */
+.grid-bg {
+  background-image: radial-gradient(circle at 2px 2px, rgba(0, 255, 136, 0.3) 1px, transparent 0); /* Increased dot opacity */
+  background-size: 40px 40px;
+  background-attachment: fixed; /* Ensures it stays fixed relative to viewport */
+}
