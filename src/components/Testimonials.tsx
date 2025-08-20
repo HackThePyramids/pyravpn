@@ -7,7 +7,7 @@ const testimonials = [
   {
     name: "Sarah Johnson",
     role: "Digital Nomad",
-    avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b5bb?w=150&h=150&fit=crop&crop=face",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face", // Updated with a new, working Unsplash photo URL
     content: "PyraVPN has been a game-changer for my remote work. The speed is incredible and I never worry about security when using public WiFi.",
     rating: 5
   },
