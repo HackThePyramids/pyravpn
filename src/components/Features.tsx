@@ -17,7 +17,7 @@ const features = [
   {
     icon: Globe,
     title: "Global Coverage",
-    description: "50+ server locations across 30 countries, giving you access to content from anywhere."
+    description: "Access the internet without restrictions from anywhere in the world."
   },
   {
     icon: Lock,
