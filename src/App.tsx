@@ -14,8 +14,7 @@ export default function App() {
   const smoothScroll = (elementId: string) => {
     const element = document.getElementById(elementId);
     if (element) {
-      // Use a consistent offset here, perhaps from a constant or prop
-      const headerOffset = 120; // Adjusted offset back to a positive value for proper scrolling behavior
+      const headerOffset = 60; // Reverted to a more common header offset
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 

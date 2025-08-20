@@ -79,9 +79,9 @@ export const Pricing = () => {
                   initial={{ opacity: 0, scale: 0 }}
                   animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
                   transition={{ duration: 0.5, delay: 0.5 }}
-                  className="absolute -top-4 w-full flex justify-center z-10 shadow-md"
+                  className="absolute -top-4 z-10 w-full text-center" // Ensure outer container spans full width and centers content
                 >
-                  <div className="bg-primary text-primary-foreground px-4 py-2 rounded-full flex items-center space-x-2">
+                  <div className="inline-flex bg-primary text-primary-foreground px-4 py-2 rounded-full items-center space-x-2 shadow-md -translate-x-[25px]"> {/* Nudge left by 4px */}
                     <Star className="w-4 h-4" />
                     <span>Most Popular</span>
                   </div>
